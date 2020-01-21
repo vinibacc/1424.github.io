@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.nav {
+    height: 46px;
+    color: white;
+}
+
+.carousel-caption {
+    width: 100%;
+    left: 0;
+    right: 0;
+}
+
+.carousel-caption h3 {
+    margin: 110px 40px 20px 40px;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.carousel-caption p {
+    font-weight: bold;
+    font-size: 0.8em;
+    margin-bottom: 40px;
+    padding: 0 20px;
+}
+
+.btn-orange {
+    background-color: #F39237;
+    color: black;
+    text-transform: uppercase;
+    border-radius: 10em;
+    border: none;
+    padding: 20px 40px;
+}
+
+.carousel-indicators li {
+    width: 15px;
+    height: 15px;
+    border-radius: 10px;
+    opacity: 1;
+    background-color: white;
+}
+
+.carousel-indicators .active {
+    background-color: #F39237;
+}
+
+.jumbotron img {
+    padding: 0 20px;
+    border-radius: 10%;
+}
+
+
+/* Container needed to position the button. Adjust the width as needed */
+
+#confira .container-img {
+    position: relative;
+    width: 100%;
+}
+
+
+/* Make the image responsive */
+
+#confira .container-img img {
+    width: 100%;
+    height: auto;
+}
+
+
+/* Style the button and place it in the middle of the container/image */
+
+#confira .container-img .btn-wimg {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #F39237;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    cursor: pointer;
+}
+
+#confira .container-img h3 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    color: white;
+    font-size: 16px;
+    padding-bottom: 20px;
+    border: none;
+}
+
+#confira a {
+    color: #F39237;
+}
+
+#comquem .bg-dark {
+    background-color: #F39237!important;
+}
+
+#comquem .nav {
+    height: 105px!important;
+}
+
+.styled-select select {
+    -moz-appearance: none;
+    /* Firefox */
+    -webkit-appearance: none;
+    /* Safari and Chrome */
+    appearance: none;
+}
+
+.form-control {
+    border-radius: 10em;
+}
+
+input::placeholder {
+    text-align: center;
+}
+
+select {
+    text-align: center;
+}
+
+textarea.form-control {
+    border-radius: 1em;
+}
+
+textarea::placeholder {
+    text-align: center;
+}
+
+
+/* Dispositivos extra small (telefones em modo retrato, com menos de 576px)*/
+
+@media (max-width: 575.98px) {
+    .h-80 {
+        height: 80vh!important;
+    }
+}
+
+
+/* Dispositivos small (telefones em modo paisagem, com menos de 768px)*/
+
+@media (max-width: 767.98px) {}
+
+
+/* Dispositivos médios (tablets com menos de 992px)*/
+
+@media (max-width: 991.98px) {}
+
+
+/* Dispositivos large (desktops com menos de 1200px)*/
+
+@media (max-width: 1199.98px) {}
