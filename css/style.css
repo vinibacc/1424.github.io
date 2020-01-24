@@ -8,7 +8,7 @@
     color: white;
 }
 
-.carousel-caption {
+#full-carousel .carousel-caption {
     width: 100%;
     left: 0;
     right: 0;
@@ -58,7 +58,7 @@
     background-color: #F39237;
 }
 
-.carousel-item>img {
+#full-carousel .carousel-item>img {
     filter: brightness(50%)
 }
 
@@ -304,8 +304,17 @@ footer p {
         width: 100%;
         top: 0;
     }
+    #comments {
+        max-height: 200px;
+    }
+    #comments .carousel-inner {
+        height: 200px;
+    }
     footer {
         text-align: left;
+    }
+    .copy {
+        text-align: center;
     }
 }
 
