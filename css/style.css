@@ -8,38 +8,18 @@
     color: white;
 }
 
-.bg-base {
-    background-color: transparent!important;
-    top: 46px;
-}
-
-.navbar {
-    position: absolute;
-    width: 100%;
-    top: 0;
-    z-index: 9;
-}
-
-.sticky {
-    position: fixed;
-    top: 0!important;
-    width: 100
-}
-
-#menu {
-    top: 46px;
-    background-color: transparent!important;
-}
-
-#full-carousel {
-    width: 100%;
-    top: 0;
-}
-
 .carousel-caption {
     width: 100%;
     left: 0;
     right: 0;
+}
+
+.carousel-item>img {
+    filter: brightness(50%);
+    object-fit: cover;
+    float: inline-end;
+    width: 100%;
+    object-position: center;
 }
 
 .carousel-caption h3 {
@@ -281,6 +261,53 @@ footer p {
 /* Dispositivos médios (tablets com menos de 992px)*/
 
 @media (max-width: 991.98px) {}
+
+@media (min-width: 991.98px) {
+    .carousel-caption h3 {
+        margin-top: 300px;
+        font-size: 4em;
+    }
+    .carousel-caption p {
+        padding: 0 25%;
+        font-size: 1em;
+    }
+    .bg-light {
+        background-color: transparent!important;
+        top: 46px;
+    }
+    .navbar {
+        font-size: 0.8em;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        z-index: 100;
+    }
+    .navbar-light .navbar-nav .nav-link {
+        color: white;
+    }
+    .sticky {
+        color: #000!important;
+        position: fixed;
+        top: 0!important;
+        width: 100;
+        background-color: #fff!important;
+        transition: 0.3s;
+    }
+    #menu {
+        color: white;
+        font-weight: bold;
+        text-transform: uppercase;
+        top: 46px;
+        padding: 20px 100px 0 100px;
+    }
+    #full-carousel {
+        width: 100%;
+        top: 0;
+    }
+    footer {
+        text-align: left;
+    }
+}
 
 
 /* Dispositivos large (desktops com menos de 1200px)*/
