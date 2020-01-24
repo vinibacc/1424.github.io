@@ -124,9 +124,7 @@
     font-weight: bold;
 }
 
-#confira a p {
-    margin-top: 25px;
-}
+#confira a p {}
 
 #comquem .bg-dark {
     background-color: #F39237!important;
@@ -134,6 +132,10 @@
 
 #comquem .nav {
     height: 105px!important;
+}
+
+#comquem .nav .nav-item {
+    margin-left: 10px;
 }
 
 .styled-select select {
@@ -205,7 +207,7 @@ footer p {
         -webkit-overflow-scrolling: touch;
     }
     .list {
-        width: 200%;
+        width: 250%;
         height: inherit;
     }
 }
