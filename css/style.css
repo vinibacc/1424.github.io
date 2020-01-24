@@ -124,7 +124,10 @@
     font-weight: bold;
 }
 
-#confira a p {}
+#confira a p {
+    margin-top: 25px;
+    font-size: 0.8em;
+}
 
 #comquem .bg-dark {
     background-color: #F39237!important;
