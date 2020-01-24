@@ -34,6 +34,8 @@
     border-radius: 10em;
     border: none;
     padding: 20px 40px;
+    font-size: 0.8em;
+    font-weight: bold;
 }
 
 .carousel-indicators li {
@@ -48,9 +50,27 @@
     background-color: #F39237;
 }
 
+.carousel-item>img {
+    filter: brightness(50%)
+}
+
+.jumbotron {
+    margin: 0;
+}
+
 .jumbotron img {
     padding: 0 20px;
     border-radius: 10%;
+}
+
+#consultoria h3,
+#confira h3 {
+    font-weight: 900;
+    font-size: 1.7em;
+}
+
+#consultoria p {
+    font-size: 0.8em;
 }
 
 
@@ -79,8 +99,8 @@
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     background-color: #F39237;
-    color: white;
-    font-size: 16px;
+    color: black;
+    font-size: 0.8em;
     padding: 12px 24px;
     cursor: pointer;
 }
@@ -97,8 +117,15 @@
     border: none;
 }
 
-#confira a {
+#confira .container-img a,
+#confira a p {
     color: #F39237;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#confira a p {
+    margin-top: 25px;
 }
 
 #comquem .bg-dark {
@@ -137,12 +164,49 @@ textarea::placeholder {
     text-align: center;
 }
 
+footer {
+    background-color: #0A1128;
+    color: #fff;
+    text-align: center;
+    padding: 40px;
+}
+
+footer h3 {
+    font-size: 1em;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+footer p {
+    font-size: 0.8em;
+}
+
+.midias a {
+    font-size: 1em;
+    color: #fff;
+}
+
+.copy {
+    font-size: 0.7em;
+}
+
 
 /* Dispositivos extra small (telefones em modo retrato, com menos de 576px)*/
 
 @media (max-width: 575.98px) {
     .h-80 {
         height: 80vh!important;
+    }
+    #comquem {
+        width: 100%;
+        overflow-y: hidden;
+        overflow-x: scroll;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+    }
+    .list {
+        width: 200%;
+        height: inherit;
     }
 }
 
