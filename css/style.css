@@ -86,7 +86,7 @@
 
 #confira .container-img img {
     width: 100%;
-    height: auto;
+    height: 200px;
 }
 
 
@@ -139,6 +139,35 @@
 
 #comquem .nav .nav-item {
     margin-left: 10px;
+}
+
+#contato {
+    background-color: #0087B9;
+}
+
+#contato h3 {
+    font-weight: bold;
+    color: #0A1128;
+    padding-top: 50px;
+}
+
+#contato p {
+    color: #fff;
+    padding-top: 20px;
+    font-size: 1em;
+    text-justify: auto;
+}
+
+.btn-whats {
+    color: #fff;
+    background-color: #39BB29;
+    width: 100%;
+    text-transform: capitalize;
+    font-size: 1em;
+}
+
+.btn-whats i {
+    font-size: 2em;
 }
 
 .styled-select select {
