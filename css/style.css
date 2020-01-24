@@ -8,6 +8,34 @@
     color: white;
 }
 
+.bg-base {
+    background-color: transparent!important;
+    top: 46px;
+}
+
+.navbar {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 9;
+}
+
+.sticky {
+    position: fixed;
+    top: 0!important;
+    width: 100
+}
+
+#menu {
+    top: 46px;
+    background-color: transparent!important;
+}
+
+#full-carousel {
+    width: 100%;
+    top: 0;
+}
+
 .carousel-caption {
     width: 100%;
     left: 0;
