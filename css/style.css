@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap');
 * {
     font-family: 'Montserrat', sans-serif;
 }
@@ -77,6 +77,24 @@
     font-size: 1.7em;
 }
 
+.w-40 {
+    width: 45%;
+}
+
+.w-30 {
+    width: 27.5%;
+}
+
+.w-25 {
+    width: 27.5%;
+}
+
+#confira .row .col-md-5,
+#confira .row .col-md-3,
+#confira .row img {
+    padding: 12px;
+}
+
 #consultoria p {
     font-size: 0.8em;
 }
@@ -149,7 +167,30 @@
     margin-left: 10px;
 }
 
+#comments {
+    max-height: 300px;
+}
+
+#comments .carousel-inner {
+    height: 300px;
+}
+
+#comments .carousel-inner .profile-desc {
+    font-weight: lighter;
+}
+
+#comments .carousel-caption>p {
+    font-weight: 200;
+    font-size: 0.8em;
+    padding-top: 20px;
+}
+
+#comments .carousel-item>img {
+    padding-left: 50%;
+}
+
 #contato {
+    padding: 50px 0;
     background-color: #0087B9;
 }
 
@@ -255,7 +296,18 @@ footer p {
 
 /* Dispositivos small (telefones em modo paisagem, com menos de 768px)*/
 
-@media (max-width: 767.98px) {}
+@media (max-width: 767.98px) {
+    .w-40,
+    .w-30,
+    .w-25 {
+        display: none;
+        ;
+    }
+    .w-30:nth-child(2) {
+        display: block;
+        width: 100%;
+    }
+}
 
 
 /* Dispositivos médios (tablets com menos de 992px)*/
@@ -275,7 +327,7 @@ footer p {
         background-color: transparent!important;
         top: 46px;
     }
-    .navbar {
+    .navbar-ajust {
         font-size: 0.8em;
         position: absolute;
         width: 100%;
@@ -298,17 +350,28 @@ footer p {
         font-weight: bold;
         text-transform: uppercase;
         top: 46px;
-        padding: 20px 100px 0 100px;
+        padding: 20px 100px;
     }
     #full-carousel {
         width: 100%;
         top: 0;
     }
     #comments {
-        max-height: 200px;
+        max-height: 300px;
     }
     #comments .carousel-inner {
-        height: 200px;
+        height: 300px;
+    }
+    #comments .carousel-inner .profile-desc {
+        font-weight: lighter;
+    }
+    #comments .carousel-caption>p {
+        font-weight: 200;
+        font-size: 1em;
+        padding: 50px 100px;
+    }
+    #comments .carousel-item>img {
+        padding-left: 15%;
     }
     footer {
         text-align: left;
