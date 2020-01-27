@@ -3,6 +3,10 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+#nav ul p {
+    margin: 0;
+}
+
 .nav {
     height: 46px;
     color: white;
@@ -23,7 +27,7 @@
 }
 
 #full-carousel .carousel-caption h3 {
-    margin: 110px 40px 20px 40px;
+    margin: 50px 40px 20px 40px;
     font-size: 2em;
     font-weight: bold;
 }
@@ -37,7 +41,7 @@
 
 .btn-orange {
     background-color: #F39237;
-    color: black;
+    color: #000;
     text-transform: uppercase;
     border-radius: 10em;
     border: none;
@@ -46,12 +50,16 @@
     font-weight: bold;
 }
 
+.btn-orange:hover {
+    background-color: #F39237;
+}
+
 .carousel-indicators li {
     width: 15px;
     height: 15px;
     border-radius: 10px;
     opacity: 1;
-    background-color: white;
+    background-color: #f1f1f1;
 }
 
 .carousel-indicators .active {
@@ -138,7 +146,7 @@
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     color: white;
-    font-size: 16px;
+    font-size: 0.8em;
     padding-bottom: 20px;
     border: none;
 }
@@ -160,11 +168,26 @@
 }
 
 #comquem .nav {
+    padding: 100px 0;
     height: 105px!important;
 }
 
 #comquem .nav .nav-item {
     margin-left: 10px;
+}
+
+#comquem a p {
+    width: 100%;
+    background-color: #F39237;
+    color: black;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    padding-bottom: 30px;
+}
+
+#comquem a:hover p {
+    text-decoration: none;
+    color: black;
 }
 
 #comments {
@@ -173,10 +196,12 @@
 
 #comments .carousel-inner {
     height: 300px;
+    padding-top: 30px;
 }
 
 #comments .carousel-inner .profile-desc {
     font-weight: lighter;
+    text-align: left;
 }
 
 #comments .carousel-caption>p {
@@ -186,7 +211,7 @@
 }
 
 #comments .carousel-item>img {
-    padding-left: 50%;
+    padding-left: 40%;
 }
 
 #contato {
@@ -197,14 +222,14 @@
 #contato h3 {
     font-weight: bold;
     color: #0A1128;
-    padding-top: 50px;
 }
 
 #contato p {
     color: #fff;
+    padding: 0 60px;
     padding-top: 20px;
     font-size: 1em;
-    text-justify: auto;
+    text-justify: distribute;
 }
 
 .btn-whats {
@@ -213,10 +238,11 @@
     width: 100%;
     text-transform: capitalize;
     font-size: 1em;
+    padding: 10px 0;
 }
 
 .btn-whats i {
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 .styled-select select {
@@ -231,12 +257,26 @@
     border-radius: 10em;
 }
 
-input::placeholder {
+input {
     text-align: center;
 }
 
-select {
+input::placeholder {
     text-align: center;
+    font-size: 0.9em;
+}
+
+select {
+    font-size: 0.9em!important;
+    text-align: center;
+    text-align-last: center;
+    background: url("../images/caret-down-solid.svg") no-repeat;
+    background-position: 85%;
+    height: 30px;
+}
+
+option {
+    font-size: 0.9em;
 }
 
 textarea.form-control {
@@ -245,6 +285,10 @@ textarea.form-control {
 
 textarea::placeholder {
     text-align: center;
+}
+
+form button {
+    color: #000;
 }
 
 footer {
@@ -312,7 +356,28 @@ footer p {
 
 /* Dispositivos médios (tablets com menos de 992px)*/
 
-@media (max-width: 991.98px) {}
+@media (max-width: 991.98px) {
+    #nav .mr-auto {
+        margin-right: auto!important;
+        margin-left: auto!important;
+    }
+    #nav ul li {
+        justify-content: center;
+        display: none!important;
+    }
+    #nav ul li:nth-child(2) {
+        display: block!important;
+    }
+    #nav ul:nth-child(2) {
+        display: none !important;
+    }
+    #comquem .nav {
+        padding: 0;
+    }
+    #comquem a {
+        display: none;
+    }
+}
 
 @media (min-width: 991.98px) {
     #full-carousel .carousel-caption h3 {
@@ -357,10 +422,10 @@ footer p {
         top: 0;
     }
     #comments {
-        max-height: 300px;
+        max-height: 350px;
     }
     #comments .carousel-inner {
-        height: 300px;
+        height: 350px;
     }
     #comments .carousel-inner .profile-desc {
         font-weight: lighter;
@@ -372,6 +437,18 @@ footer p {
     }
     #comments .carousel-item>img {
         padding-left: 15%;
+    }
+    input,
+    input::placeholder,
+    select,
+    option,
+    textarea,
+    textarea::placeholder {
+        text-align: left;
+        text-align-last: left;
+    }
+    form button {
+        width: 100%;
     }
     footer {
         text-align: left;
