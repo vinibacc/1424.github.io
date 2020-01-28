@@ -270,7 +270,7 @@ select {
     font-size: 0.9em!important;
     text-align: center;
     text-align-last: center;
-    background: url("../images/caret-down-solid.svg") no-repeat;
+    background: url("../images/caret.png") no-repeat;
     background-position: 85%;
     height: 30px;
 }
